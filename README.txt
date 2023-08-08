@@ -4,9 +4,10 @@ and written like English, though it could probably be
 extended to a lot of languages with some translation.
 
 All I've got so far is a fairly established idea about
-the language's syntax. I'm implementing the interpreter
-in TypeScript with Deno because I like TypeScript and I
-thought Deno seemed interesting and fairly intuitive.
+the language's syntax, and a lexer. I'm implementing
+the interpreter in TypeScript with Deno because I like
+TypeScript and I thought Deno seemed interesting and
+fairly intuitive.
 
 If you have any feedback or ideas for the language,
 please open an issue! It would be really useful for me
@@ -59,8 +60,10 @@ The result of applying (
 ) to each item of (the list).
 
 “How I'm planning to implement the interpreter:
-1. Lex the source into numbers, strings, parentheses, etc, and words.
+1. Lex the source into numbers, strings, parentheses, etc, 
+   and words.
 2. Add each variable declaration to a scoped list.
 3. Add each function declaration to a scoped list.
-4. For each connected section of words, search for a variable or a function that matches it.
+4. For each connected section of words, search for a 
+   variable or a function that matches it.
 5. Execute from top-to-bottom.”
