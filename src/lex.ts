@@ -8,7 +8,8 @@ interface Token {
     | "rparen"
     | "word"
     | "tab"
-    | "period";
+    | "period"
+    | "colon";
   startIndex: number;
   text: string;
 }
@@ -18,6 +19,7 @@ const tokenMap = {
   "(": "lparen",
   ")": "rparen",
   ".": "period",
+  ":": "colon",
 } as const;
 
 export function lexSource(source: string) {
