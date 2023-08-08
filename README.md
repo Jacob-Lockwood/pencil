@@ -1,23 +1,14 @@
-Hello! This is the repository for Pencil, a programming
-language that I am working on. It's designed to be read
-and written like English, though it could probably be
-extended to a lot of languages with some translation.
+Hello! This is the repository for Pencil, a programming language that I am working on. It's designed to be read and written like English, though it could probably be extended to a lot of languages with some translation.
 
-All I've got so far is a fairly established idea about
-the language's syntax, and a lexer. I'm implementing
-the interpreter in TypeScript with Deno because I like
-TypeScript and I thought Deno seemed interesting and
-fairly intuitive.
+All I've got so far is a fairly established idea about the language's syntax, and a lexer. I'm implementing the interpreter in TypeScript with Deno because I like TypeScript and I thought Deno seemed interesting and fairly intuitive.
 
-If you have any feedback or ideas for the language,
-please open an issue! It would be really useful for me
-to get some more insight on how I could improve it.
+If you have any feedback or ideas for the language, please open an issue! It would be really useful for me to get some more insight on how I could improve it.
 
-What follows is my rough notes on how this language is
-going to be, in Pencil code:
+What follows is my rough notes on how this language is going to be, in Pencil code:
 
--------------------------------------------------------
+-----
 
+```
 “Programs are saved in .txt files.”
 
 “Function names can have spaces in them.”
@@ -64,6 +55,7 @@ The result of applying (
    and words.
 2. Add each variable declaration to a scoped list.
 3. Add each function declaration to a scoped list.
-4. For each connected section of words, search for a 
-   variable or a function that matches it.
+4. For each connected section of words, search for a
+  variable or a function that matches it.
 5. Execute from top-to-bottom.”
+```
