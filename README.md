@@ -6,13 +6,12 @@ If you have any feedback or ideas for the language, please open an issue! It wou
 
 What follows is my rough notes on how this language is going to be, in Pencil code:
 
------
+---
 
 ```
 “Programs are saved in .txt files.”
 
 “Function names can have spaces in them.”
-
 To get the range from (<number> a) to (<number> b):
     Let (<number list> c) be (an empty list).
     “Type inference :D”
@@ -42,8 +41,7 @@ Let (the parsed input) be (
 ).
 Print (whether (the parsed input) is prime) to the console.
 
-“Syntax construct: Mapping
-Note: This syntax isn't final.”
+“Syntax construct: Mapping. Note: This syntax isn't final.”
 A mapping of a <number> to { whether (it) is prime }.
 
 The result of applying (
@@ -51,11 +49,15 @@ The result of applying (
 ) to each item of (the list).
 
 “How I'm planning to implement the interpreter:
-1. Lex the source into numbers, strings, parentheses, etc, 
-   and words.
-2. Add each variable declaration to a scoped list.
-3. Add each function declaration to a scoped list.
-4. For each connected section of words, search for a
-  variable or a function that matches it.
+
+1. Lex the source into numbers, strings,
+   parentheses, etc, and words.
+2. Add each variable declaration to a
+   scoped list.
+3. Add each function declaration to a
+   scoped list.
+4. For each connected section of words,
+   search for a variable or a function
+   that matches it.
 5. Execute from top-to-bottom.”
 ```
